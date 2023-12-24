@@ -1,0 +1,118 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f4f8; /* Light blue-gray */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0e4d64, #51c4d3); /* Dark teal to teal */
+    color: #ffffff; /* White */
+    padding: 20px;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2em;
+    color: #dadada; /* Dark gray color */
+}
+
+.main-section {
+    padding: 20px;
+}
+
+.section-title {
+    border: #0e4d64;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    padding-bottom: 10px;
+    font-size: 2em;
+    color: #204051; /* Dark teal */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.overview-text {
+    color: #333333; /* Dark gray color */
+    line-height: 1.5;
+}
+
+.dean-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dean-card {
+    border: 1px solid #348899; /* Teal */
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    justify-content: center;
+}
+
+.dean-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dean-img {
+    height: 75%;
+    width: auto;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.dean-info {
+    padding: 5px;
+    text-align: center;
+}
+
+.dean-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #204051; /* Dark teal */
+}
+
+.dean-qualification,
+.dean-research {
+    color: #333333; /* Dark gray color */
+}
+
+.degree-list {
+    color: #333333; /* Dark gray color */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.footer {
+    background: #204051; /* Dark teal */
+    color: #ffffff; /* White */
+    text-align: center;
+    padding: 10px;
+}
