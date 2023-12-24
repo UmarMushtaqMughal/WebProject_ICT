@@ -1,0 +1,185 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6e9ee; /* Light blue-gray */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    #0e4d64,
+    #51c4d3
+  ); /* Dark teal to teal */
+  color: #ffffff; /* White */
+  padding: 20px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.menu-icon-line {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #204051; /* Dark teal */
+  margin: 5px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2.5em; /* Adjust the font size as needed */
+  font-family: "Montserrat", sans-serif; /* Change the font family */
+  color: #dadada; /* Dark gray color */
+  /* text-shadow: 2px 2px 4px #000000; */
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 75px;
+  background: linear-gradient(to top, #348899, #0e4d64); /* Teal to dark teal */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-link {
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.menu-link:hover {
+  background-color: #204051; /* Dark teal */
+  color: #f2f2f2;
+}
+
+.menu-btn:checked ~ .menu {
+  display: block;
+  animation: slideIn 0.3s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.main-section {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 2em;
+  color: #204051; /* Dark teal */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.latest-news,
+.article-title,
+.article-content,
+.faculty-description {
+  color: #204051; /* Dark teal */
+}
+
+.faculty-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.faculty-card {
+  border: 1px solid #348899; /* Teal */
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.faculty-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.faculty-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.faculty-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.faculty-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #204051; /* Dark teal */
+}
+
+.faculty-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+  
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Add this line */
+  }
+
+.video-container:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background: #204051; /* Dark teal */
+  color: #ffffff; /* White */
+  text-align: center;
+  padding: 10px;
+}
